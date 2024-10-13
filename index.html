@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>jhs</title>
+      <link rel="stylesheet" href="css\style.css" />
+      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <!-- navbar -->
+         <nav>
+            <div class="nav container">
+               <i class="bx bx-menu" id="menu-icon"></i>
+               <img src="img\logo jhs.jpeg" alt="logo" class="navbar-logo" />
+               <ul class="navbar">
+                  <li><a href="#home" class="active">Beranda</a></li>
+                  <li><a href="#about">Tentang Kami</a></li>
+                  <li><a href="#services">Layanan Kami</a></li>
+                  <li><a href="#contact">Kontak Kami</a></li>
+               </ul>
+
+               <i class="bx bx-search" id="search-icon"></i>
+
+               <div class="search-box container">
+                  <input type="search" name="" id="" placeholder="Search Here..." />
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- navbar -->
+
+      <!-- home -->
+      <main>
+         <article class="home" id="home">
+            <div class="home-text">
+               <h1>We Keep Your Jeep<br /><span> Running</span></h1>
+               <p>Legends aren't born, they're made</p>
+               <a href="#" class="btn" id="booking-btn"> Booking Sekarang</a>
+            </div>
+         </article>
+         <!-- home -->
+
+         <!-- about -->
+         <article class="about container" id="about">
+            <div class="about-img">
+               <img src="img\maxresdefault.png" alt="" />
+            </div>
+            <div class="about-text">
+               <span>Tentang Kami</span>
+               <h2>Sejarah JHS Jeep 4x4</h2>
+               <p>JHS 4x4: Bengkel Spesialis Jeep Terpercaya. Sejak 2019, kami telah menjadi mitra terpercaya para pemilik Jeep. Percayakan perawatan Jeep Anda pada kami.</p>
+               <a href="#about" class="btn" onclick="openPopup()">Lihat Selengkapnya</a>
+            </div>
+         </article>
+         <!-- about -->
+
+         <!-- Services -->
+         <article class="services" id="services">
+            <div class="heading">
+               <span>Layanan Kami</span>
+               <h2>Layanan di bengkel JHS 4x4</h2>
+               <p>JHS 4x4 menyediakan berbagai layanan profesional untuk kendaraan jeep Anda</p>
+            </div>
+
+            <div class="services-container container">
+               <div class="box">
+                  <img src="img/layanan1.jpg" alt="" />
+                  <h3>Maintenance</h3>
+                  <span>Rp5.000.000</span>
+                  <p class="details" id="maintenance-details">Lihat Selengkapnya</p>
+               </div>
+               <div class="box">
+                  <img src="img/layanan2.jpg" alt="" />
+                  <h3>Change Air Filter</h3>
+                  <span>Rp1.000.000</span>
+                  <p class="details" id="airfilter-details">Lihat Selengkapnya</p>
+               </div>
+               <div class="box">
+                  <img src="img/layanan3.jpeg" alt="" />
+                  <h3>Undercarriage</h3>
+                  <span>Rp4.500.000</span>
+                  <p class="details" id="undercarriage-details">Lihat Selengkapnya</p>
+               </div>
+               <div class="box">
+                  <img src="img/layanan4.jpg" alt="" />
+                  <h3>Change Battery</h3>
+                  <span>Rp1.200.000</span>
+                  <p class="details" id="changebattery-details">Lihat Selengkapnya</p>
+               </div>
+               <div class="box">
+                  <img src="img/layanan5.jpg" alt="" />
+                  <h3>Change Exhaust</h3>
+                  <span>Rp12.000.000</span>
+                  <p class="details" id="changeexhaust-details">Lihat Selengkapnya</p>
+               </div>
+               <div class="box">
+                  <img src="img/layanan7.jpeg" alt="" />
+                  <h3>Refresh Engine</h3>
+                  <span>Rp20.000.000</span>
+                  <p class="details" id="refreshengine-details">Lihat Selengkapnya</p>
+               </div>
+            </div>
+            <!-- Services -->
+
+            <!-- Kontak Kami -->
+            <article class="contact-us" id="contact">
+               <div class="container">
+                  <h2 class="section-title">Kontak Kami</h2>
+                  <h1 class="main-title">Hubungi Kami</h1>
+                  <div class="contact-content">
+                     <div class="contact-form">
+                        <h3>Butuh Bantuan ?</h3>
+                        <p>Silahkan Hubungi kami jika anda ada kendala dengan kendaraan anda</p>
+                        <form>
+                           <input type="text" placeholder="Your name" required />
+                           <input type="email" placeholder="Your email" required />
+                           <input type="text" placeholder="Your Subject" required />
+                           <textarea placeholder="Your message..." required></textarea>
+                           <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                     </div>
+                     <div class="contact-map">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.
+          115796072041!2d106.93366291137862!3d-6.
+          259917070212494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+          1!3m3!1m2!1s0x2e698d1b8403610d%3A0x1b865ba0d6088ec0!2sBengkel%20Jeep%20JHS%204x4!5e0
+          !3m2!1sid!2sid!4v1723015107002!5m2!1sid!2sid"
+                           width="100%"
+                           height="100%"
+                           style="border: 0"
+                           allowfullscreen=""
+                           loading="lazy"
+                        ></iframe>
+                     </div>
+                  </div>
+
+                  <div class="contact-info">
+                     <div class="info-item">
+                        <i class="bx bx-map"></i>
+                        <h3>Location</h3>
+                        <p>Gg. Melati Jl. Jati Bening II No.2.</p>
+                     </div>
+                     <div class="info-item">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email</h3>
+                        <p>jhs4x4@gmail.com</p>
+                     </div>
+                     <div class="info-item">
+                        <i class="bx bx-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+628989878565678432432435</p>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <!-- Kontak Kami -->
+         </article>
+
+         <!-- popup about -->
+         <div id="popup" class="popup">
+            <div class="popup-content">
+               <span class="close" onclick="closePopup()">&times;</span>
+               <h2>Sejarah JHS Jeep 4x4</h2>
+               <p>
+                  JHS Jeep 4x4 didirikan pada tahun 2019 oleh sekelompok penggemar Jeep yang berdedikasi. Berawal dari hobi dan passion terhadap kendaraan off-road, khususnya Jeep, kami memutuskan untuk membuka bengkel spesialis yang fokus
+                  pada perawatan, perbaikan, dan modifikasi Jeep.
+               </p>
+               <br />
+               <p>
+                  Selama bertahun-tahun, kami telah melayani ratusan pemilik Jeep di seluruh wilayah, membangun reputasi sebagai bengkel yang dapat diandalkan dan berkualitas tinggi. Komitmen kami terhadap kualitas layanan dan kepuasan
+                  pelanggan telah membuat JHS Jeep 4x4 menjadi nama yang dipercaya di komunitas Jeep.
+               </p>
+            </div>
+         </div>
+         <!-- popup about -->
+
+         <!--  -->
+         <div id="modal-booking" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <form action="#" method="get" onsubmit="submitBooking(); return false;">
+                  <div class="modal-header">
+                     <span id="close-booking" class="close">&times;</span>
+                     <h2>Booking</h2>
+                     <hr />
+                  </div>
+                  <div class="modal-body">
+                     <table>
+                        <tr>
+                           <td>Nama</td>
+                           <td>: <input type="text" name="nama" id="nama" required /></td>
+                        </tr>
+                        <tr>
+                           <td>Jenis Mobil</td>
+                           <td>: <input type="text" name="jenis_mobil" id="jenis-mobil" required /></td>
+                        </tr>
+                        <tr>
+                           <td>Tahun Mobil</td>
+                           <td>: <input type="number" name="tahun_mobil" id="tahun" required /></td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="dropdown">
+                                 <button type="button" onclick="myFunction()" class="dropbtn">Pilih layanan</button>
+                                 <div id="myDropdown" class="dropdown-content">
+                                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Maintenance" />
+                                    <label for="vehicle1"> Maintenance</label><br />
+                                    <input type="checkbox" id="vehicle2" name="vehicle2" value="ChangeAirFilter" />
+                                    <label for="vehicle2"> Change Air Filter</label><br />
+                                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Undercarriage" />
+                                    <label for="vehicle3"> Undercarriage</label><br />
+                                    <input type="checkbox" id="vehicle4" name="vehicle4" value="ChangeBattery" />
+                                    <label for="vehicle1"> Change Battery</label><br />
+                                    <input type="checkbox" id="vehicle5" name="vehicle5" value="AddDoubleExhaust" />
+                                    <label for="vehicle2"> Add Double Exhaust</label><br />
+                                    <input type="checkbox" id="vehicle6" name="vehicle6" value="RefreshEngine" />
+                                    <label for="vehicle3"> Refresh Engine</label><br />
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>Catatan tambahan (optional)</td>
+                        </tr>
+                        <tr>
+                           <td colspan="2">
+                              <textarea id="note" name="note" rows="4" cols="63"></textarea>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <div class="modal-footer">
+                     <hr />
+                     <button type="submit" class="submit-booking-btn">Selesai</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+         <!-- Modal Maintenance -->
+         <div id="modal-maintenance" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span id="close-maintenance" class="close">&times;</span>
+                  <h2>Apa itu Maintenance?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Perawatan dalam servis mobil merupakan tindakan perawatan rutin yang dilakukan untuk menjaga kendaraan tetap dalam kondisi optimal.</p>
+                  <br />
+                  <p><b>Beberapa contoh tindakan maintenance pada mobil meliputi:</b></p>
+                  <ol type="1">
+                     <li>Penggantian oli dan filter: Penggantian oli secara teratur penting untuk melumasi mesin agar bekerja dengan baik dan mengurangi keausan pada komponen mesin. Filter oli juga diganti untuk menjaga kebersihan oli.</li>
+                     <br />
+                     <li>Penggantian oli dan filter: Penggantian oli secara teratur penting untuk melumasi mesin agar bekerja dengan baik dan mengurangi keausan pada komponen mesin. Filter oli juga diganti untuk menjaga kebersihan oli.</li>
+                     <br />
+                     <li>
+                        Pengecekan rem: Memeriksa kondisi bantalan rem dan komponen lainnya untuk memastikan sistem pengereman berfungsi dengan baik dan aman. Penggantian cairan radiator (coolant): Cairan radiator diganti secara berkala
+                        untuk mencegah overheating dan menjaga suhu mesin pada tingkat optimal.
+                     </li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+
+         <!-- The Modal -->
+         <div id="modal-airfilter" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="close" id="close-airfilter">&times;</span>
+                  <h2>Apa itu Filter Udara?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Change air filter dalam servis mobil adalah proses mengganti filter udara yang berfungsi untuk menyaring kotoran, debu, dan partikel lain dari udara sebelum masuk ke mesin.</p>
+                  <br />
+                  <p><b>Fungsi Filter udara pada mobil adalah:</b></p>
+                  <ol type="1">
+                     <li>Menyaring Udara: Filter udara mencegah debu, serangga, kotoran, dan partikel lainnya masuk ke ruang pembakaran mesin. Tanpa filter, partikel tersebut bisa merusak komponen mesin.</li>
+                     <br />
+                     <li>
+                        Menjaga Efisiensi Pembakaran: Untuk pembakaran bahan bakar yang optimal, mesin membutuhkan aliran udara yang cukup. Filter udara yang kotor akan menghambat aliran udara, yang bisa mengurangi efisiensi bahan bakar dan
+                        menurunkan performa mobil.
+                     </li>
+                     <br />
+                     <li>
+                        Mencegah Kerusakan Mesin: Jika partikel kotoran masuk ke mesin, hal ini bisa mengakibatkan keausan yang cepat pada komponen mesin seperti piston dan silinder. Penggantian filter udara secara berkala mencegah risiko
+                        kerusakan ini.
+                     </li>
+                  </ol>
+               </div>
+               <!-- <div class="modal-footer">
+               </div> -->
+            </div>
+         </div>
+
+         <!-- The Modal -->
+         <div id="modal-undercarriage" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="close" id="close-undercarriage">&times;</span>
+                  <h2>Apa itu Undercarriage?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Undercarriage dalam servis mobil merujuk pada bagian bawah kendaraan, yang mencakup komponen-komponen penting seperti sasis, suspensi, sistem knalpot, dan bagian-bagian lain yang terletak di bawah bodi mobil.</p>
+                  <br />
+                  <p><b>Komponen Utama yang Termasuk dalam Undercarriage:</b></p>
+                  <ol type="1">
+                     <li>Suspensi: Sistem suspensi, termasuk peredam kejut (shock absorber), per, dan lengan suspensi, yang berfungsi untuk memberikan kenyamanan berkendara dan menjaga kestabilan mobil.</li>
+                     <br />
+                     <li>Sistem Rem (Brake System): Pada bagian bawah mobil, sistem rem seperti kaliper, cakram, dan selang rem diperiksa untuk memastikan fungsi pengereman yang aman.</li>
+                     <br />
+                     <li>Pada kendaraan berpenggerak roda belakang atau empat roda, poros penggerak yang mentransfer tenaga dari transmisi ke roda juga diperiksa.</li>
+                  </ol>
+               </div>
+               <!-- <div class="modal-footer">
+               </div> -->
+            </div>
+         </div>
+         <!-- The Modal -->
+         <div id="modal-ChangeBattery" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="close" id="close-ChangeBattery">&times;</span>
+                  <h2>Apa itu Change Battery?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Change battery dalam servis mobil adalah proses mengganti aki mobil yang sudah tidak berfungsi optimal atau telah habis masa pakainya.</p>
+                  <br />
+                  <p><b>Tanda-tanda Aki Mobil Perlu Diganti:</b></p>
+                  <ol type="1">
+                     <li>Mobil Sulit Dihidupkan: Ketika aki mulai lemah, mesin mungkin akan sulit untuk distarter. Ini bisa terjadi terutama saat pagi hari atau ketika cuaca dingin.</li>
+                     <br />
+                     <li>Tegangan Aki Rendah: Jika diperiksa menggunakan alat pengukur tegangan (multimeter), tegangan aki yang sehat harus sekitar 12,6 volt saat mesin mati. Tegangan yang lebih rendah menandakan aki lemah.</li>
+                     <br />
+                     <li>Aki Tua: Umur aki biasanya sekitar 2-5 tahun, tergantung pada jenis dan penggunaan. Aki yang sudah mendekati akhir masa pakainya harus segera diganti untuk mencegah masalah di kemudian hari.</li>
+                  </ol>
+               </div>
+               <!-- <div class="modal-footer">
+               </div> -->
+            </div>
+         </div>
+
+         <!-- The Modal -->
+         <div id="modal-ChangeExhaust" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="close" id="close-ChangeExhaust">&times;</span>
+                  <h2>Apa itu Change Exhaust?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Change exhaust atau penggantian knalpot dalam servis mobil adalah proses mengganti sistem pembuangan gas buang (exhaust system) dari mesin.</p>
+                  <br />
+                  <p><b>Komponen Utama Sistem Knalpot:</b></p>
+                  <ol type="1">
+                     <li>Manifold Knalpot (Exhaust Manifold): Bagian ini bertugas mengumpulkan gas buang dari setiap silinder mesin dan menyalurkannya ke pipa pembuangan.</li>
+                     <br />
+                     <li>Catalytic Converter: Alat ini digunakan untuk mengurangi emisi gas berbahaya seperti karbon monoksida (CO), nitrogen oksida (NOx), dan hidrokarbon (HC) sebelum gas buang dilepaskan ke udara.</li>
+                     <br />
+                     <li>Resonator: Alat ini berfungsi untuk mengurangi suara mesin sebelum gas melewati muffler.</li>
+                     <br />
+                     <li>Muffler (Peredam): Bagian ini bertugas meredam suara dari mesin sebelum gas buang dilepaskan ke udara. Muffler membantu membuat suara mesin lebih halus dan tidak bising.</li>
+                  </ol>
+               </div>
+               <!-- <div class="modal-footer">
+               </div> -->
+            </div>
+         </div>
+         <!-- The Modal -->
+         <div id="modal-RefreshEngine" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="close" id="close-RefreshEngine">&times;</span>
+                  <h2>Apa itu Refresh Engine?</h2>
+               </div>
+               <div class="modal-body">
+                  <p>Refresh engine dalam servis mobil adalah proses memperbarui atau menyegarkan kembali mesin kendaraan untuk mengembalikan performanya mendekati kondisi semula.</p>
+                  <br />
+                  <p><b>Komponen yang Umumnya Diservis dalam Refresh Engine:</b></p>
+                  <ol type="1">
+                     <li>Piston Rings: Mengganti cincin piston yang aus untuk mencegah kebocoran oli ke ruang bakar dan memastikan kompresi mesin yang baik.</li>
+                     <br />
+                     <li>Gasket: Penggantian gasket kepala silinder dan gasket lainnya yang mungkin mengalami kebocoran.</li>
+                     <br />
+                     <li>Valve (Katup): Pembersihan atau penggantian katup dan bagian-bagian yang terkait untuk memastikan aliran udara dan bahan bakar yang efisien.</li>
+                     <br />
+                     <li>Bore dan Honing Cylinder: Memperbaiki atau memoles permukaan silinder untuk memastikan piston bergerak dengan lancar.</li>
+                  </ol>
+               </div>
+               <!-- <div class="modal-footer">
+               </div> -->
+            </div>
+         </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+         <div class="footer-content">
+            <div class="footer-social">
+               <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+               <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+               <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+               <a href="#" class="social-icon"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+            <div class="footer-text">
+               <p>&copy; JHS Jeep 4x4. 2024 | All Rights Reserved</p>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script src="js\script.js"></script>
+</html>
